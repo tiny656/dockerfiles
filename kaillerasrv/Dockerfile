@@ -12,6 +12,9 @@ ENV IP=
 
 ENV DEBIAN_FRONTEND noninteractive
 
+EXPOSE 27888/tcp
+EXPOSE 27888/udp
+
 RUN apt-get update \
     && apt-get -y -q install wget lib32z1 lib32ncurses6 libstdc++6 \
     && rm -rf /var/lib/apt/lists/* \
