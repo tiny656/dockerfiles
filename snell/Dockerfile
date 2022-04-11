@@ -1,6 +1,6 @@
 FROM tiny656/alpine-glibc
 
-ENV SNELL_VERSION 2.0.6
+ENV SNELL_VERSION 3.0.1
 
 RUN apk update \
   && apk add --no-cache \
