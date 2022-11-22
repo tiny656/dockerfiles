@@ -2,17 +2,17 @@ name: Docker Image CI
 
 on:
   workflow_dispatch:
-  inputs:
-    image:
-      description: 'Docker Images'
-      required: true
-      default: 'alpine-glibc'
-      type: choice
-      options:
-      - alpine-glibc
-      - anyproxy
-      - kaillerasrv
-      - snell
+    inputs:
+      image:
+        description: 'Docker Images'
+        required: true
+        default: 'alpine-glibc'
+        type: choice
+        options:
+        - alpine-glibc
+        - anyproxy
+        - kaillerasrv
+        - snell
 
 jobs:
   push-to-docker-hub:
