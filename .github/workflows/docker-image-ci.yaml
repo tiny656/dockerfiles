@@ -1,4 +1,4 @@
-name: Docker Image CI
+run-name: docker image CI for ${{ inputs.image }} on branch ${{ github.ref_name }}
 
 on:
   workflow_dispatch:
@@ -55,5 +55,5 @@ jobs:
         message: |
           repository: ${{ github.event.repository.name }}
           github.ref: ${{ github.ref }}
-          action: #${{ github.run_number}} ${{ github.workflow }}
+          action: #${{ github.run_number }} ${{ github.workflow }}
           status: ${{ needs.push-to-docker-hub.result }}
