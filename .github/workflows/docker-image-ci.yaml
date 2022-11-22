@@ -7,10 +7,9 @@ on:
       image:
         description: 'Docker Images'
         required: true
-        default: 'alpine-glibc'
+        default: 'anyproxy'
         type: choice
         options:
-        - alpine-glibc
         - anyproxy
         - kaillerasrv
         - snell
